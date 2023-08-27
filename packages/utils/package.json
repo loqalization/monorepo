@@ -1,0 +1,18 @@
+{
+  "name": "utils",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/main.js",
+  "scripts": {
+    "dev": "rimraf dist && tsup src/main.ts --format cjs --dts --minify --sourcemap --watch"
+  },
+  "types": "dist/main.d.ts",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "rimraf": "^5.0.1",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2"
+  }
+}
