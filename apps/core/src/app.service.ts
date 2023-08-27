@@ -3,8 +3,8 @@ import { Validation } from 'utils';
 
 @Injectable()
 export class AppService {
-  getHello(): string {
-    console.log(Validation.isEmail('qwe'));
-    return 'Hello World!';
-  }
+    getHello(): string {
+        console.log(Validation.isEmail('qwe'));
+        return 'Hello World!';
+    }
 }
