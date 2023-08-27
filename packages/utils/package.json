@@ -4,7 +4,7 @@
   "description": "",
   "main": "dist/main.js",
   "scripts": {
-    "dev": "rimraf dist && tsup src/main.ts --format cjs --dts --minify --sourcemap --watch",
+    "dev": "tsup src/main.ts --format cjs --dts --minify --sourcemap --watch",
     "build": "rimraf dist && tsup src/main.ts --format cjs --dts --minify --sourcemap"
   },
   "types": "dist/main.d.ts",
@@ -14,6 +14,7 @@
   "dependencies": {
     "rimraf": "^5.0.1",
     "tsup": "^7.2.0",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "zod": "^3.22.2"
   }
 }
