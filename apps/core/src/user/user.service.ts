@@ -4,8 +4,8 @@ import { User } from './types';
 // This should be a real class/interface representing a user entity
 
 @Injectable()
-export class UsersService {
-    private readonly users = [
+export class UserService {
+    private readonly User = [
         {
             userId: 1,
             username: 'john',
@@ -19,6 +19,6 @@ export class UsersService {
     ];
 
     async findOne(username: string): Promise<User | undefined> {
-        return this.users.find((user) => user.username === username);
+        return this.User.find((user) => user.username === username);
     }
 }
